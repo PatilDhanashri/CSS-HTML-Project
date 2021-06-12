@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* to box model */
+}
+body{
+    font-family: 'Merriweather', serif;
+    background-color:  #ebf2ff;    
+}
+.navbar{
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    background-color: #fff;
+    /* height: 80px; */
+}
+.navbar_brand{
+    width: 100px;
+   
+}
+.navbar_logo{
+    width: 90%;
+}
+.nav_item{
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    color: #fff;
+    border: none;
+    padding:10px ;
+    border-radius:6px ;
+}
+.nav_item:hover{
+     background-position: right center;/* change the direction of the change here */
+    border:  2px solid rgb(119, 81, 102);
+
+}
+
+ @media (min-width:768px){
+  .navbar{
+        justify-content:space-between;
+        padding:2px 30px ;
+      }
+}
+
+@media (min-width:1020px){
+    .navbar_brand{
+        width: 150px;
+
+    }
+    .nav_item{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
